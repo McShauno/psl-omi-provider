@@ -43,6 +43,10 @@ PSRP requires the following additional dependent packages:
 ```sh
 sudo apt-get install cmake
 ```
+- By default, Ubuntu typically uses mawk for text processing and the build script here is fairly sensitive and requires gawk.  You may need to do the following before executing the build (or if you are experiencing awk errors when building):
+```sh
+sudo apt-get install gawk
+```
 - On CentOS 7.x
 ```sh
 sudo yum install cmake
